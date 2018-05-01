@@ -2,6 +2,9 @@
 
 <ul>
   <%@songs.each do |song| %>
+  <div class="song">
   <li><%= song.title %></l1>
+    <%= link_to "Delete", song, method: :delete, data: {confirm: "Really?"} %>
+  </div>
   <% end %>
 </ul>
