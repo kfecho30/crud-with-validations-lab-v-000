@@ -1,10 +1,10 @@
 <h1>All Songs</h1>
 
-<ul>
+<tbody>
   <%@songs.each do |song| %>
   <div class="song">
-  <li><%= song.title %></l1>
+  <tr><%= song.title %></tr>
     <%= link_to "Delete", song, method: :delete, data: {confirm: "Really?"} %>
   </div>
   <% end %>
-</ul>
+</tbody>
