@@ -2,9 +2,7 @@
 
 <tbody>
   <%@songs.each do |song| %>
-  <div class="song">
   <tr><%= song.title %></tr>
     <%= link_to "Delete", song, method: :delete, data: {confirm: "Really?"} %>
-  </div>
   <% end %>
 </tbody>
